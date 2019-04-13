@@ -1,0 +1,17 @@
+os: osx
+osx_image: xcode9.4
+
+language: objective-c
+xcode_project: SonicAsteroids.xcodeproj/project.pbxproj
+
+
+before_install:
+- brew install git-lfs
+
+before_script:
+- git lfs pull
+
+branches:
+  only:
+  - ci
+
